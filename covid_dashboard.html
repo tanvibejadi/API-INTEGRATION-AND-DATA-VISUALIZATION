@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Data Visualization Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .chart {
+            text-align: center;
+            margin: 30px 0;
+        }
+        img {
+            max-width: 90%;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>COVID-19 Data Visualization Dashboard</h1>
+    <h2>Internship Project – CodTech</h2>
+
+    <div class="chart">
+        <h3>Top 10 Countries by Total COVID-19 Cases</h3>
+        <img src="top10_cases.png" alt="Top 10 COVID-19 Cases">
+    </div>
+
+    <div class="chart">
+        <h3>Deaths vs Recovered (Top 10 Countries)</h3>
+        <img src="deaths_vs_recovered.png" alt="Deaths vs Recovered">
+    </div>
+
+    <footer>
+        Data Source: <a href="https://disease.sh" target="_blank">https://disease.sh</a><br>
+        Created using Python, Matplotlib & Seaborn
+    </footer>
+</body>
+</html>
