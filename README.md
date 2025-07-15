@@ -63,3 +63,6 @@ This project also introduces concepts of data pipeline automation, visual storyt
 
 Conclusion
 The project successfully integrates API data extraction, data manipulation, visualization, and presentation — all using Python and open-source tools. It showcases my ability to build end-to-end data applications and demonstrates a strong foundation in both programming and analytical thinking. It also improves readiness for real-world tasks in domains like data analytics, reporting, automation, and dashboard development.
+
+#OUTPUT
+https://github.com/user-attachments/assets/d6c02229-ffd7-4bce-978d-d90fb325c781
