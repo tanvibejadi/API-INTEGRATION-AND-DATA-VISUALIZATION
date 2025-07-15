@@ -13,56 +13,66 @@ DURATION: 4 WEEKS
 MENTOR: NEELA SANTOSH
 
 Project Overview:
-As part of the CodTech internship program, I completed a hands-on project titled "API Integration and Data Visualization using Python." The main objective of this project was to interact with a public REST API, process the fetched data using Python, and create insightful visualizations using standard data science libraries. This project integrates real-world data handling, programming logic, and presentation skills in the form of a dashboard and report, fulfilling key aspects of data-driven development.
+As part of the internship program offered by CodTech, I completed a technical project titled "API Integration and Data Visualization using Python". The objective was to retrieve real-time data from a public API, process it using Python, and generate meaningful visualizations using standard data analysis libraries. This project helped me develop hands-on experience with live data, scripting logic, visualization, and professional reporting.
 
 Editor and Platform Used:
-For this project, I used Visual Studio Code (VS Code) as the primary code editor due to its extensive Python support, rich extension ecosystem, and easy terminal integration. The script was developed and tested locally on a Windows 10 system using the Command Prompt for running scripts and installing libraries.
+The project was developed using Visual Studio Code (VS Code) on a Windows 10 system. VS Code was chosen for its Python-friendly environment, integrated terminal, and support for extensions. Output files (images and reports) were saved locally and viewed using default system applications. The optional HTML dashboard was viewed in the Google Chrome browser. All commands were executed through the Windows Command Prompt.
 
-In addition, for visualization and plotting, I verified outputs by opening the generated image files (.png) and PDF reports directly from the Windows file explorer. The HTML dashboard was tested in modern web browsers such as Chrome and Edge.
+Working Procedure:
+API Selection and Data Fetching:
+I used the COVID-19 public API (https://disease.sh/v3/covid-19/countries) to fetch country-wise live pandemic data. Using the requests library in Python, I sent an HTTP GET request and received a JSON response.
 
-Libraries and Tools Used:
-The project leveraged several powerful Python libraries and tools:
+Data Cleaning and Structuring:
+The raw JSON was converted into a structured Pandas DataFrame. I selected relevant fields like country, cases, deaths, recovered, and active to work with. The data was then filtered to extract the top 10 countries by total cases.
 
-Python (version 3.10 or higher)
-The main programming language used to write the data processing and visualization logic.
+Data Visualization:
+I used Matplotlib and Seaborn to create:
 
-Requests
-Used for sending HTTP GET requests to the public API (https://disease.sh/v3/covid-19/countries) to retrieve live COVID-19 statistics per country.
+A bar chart displaying the top 10 countries with the highest number of COVID-19 cases.
 
-Pandas
-Used for tabular data processing and analysis. It helped transform JSON data from the API into structured DataFrames and supported sorting/filtering the data.
+A scatter plot comparing total deaths vs. recoveries.
 
-Matplotlib & Seaborn
-These libraries were used to create high-quality visualizations. Matplotlib offered base-level customization while Seaborn provided aesthetic and informative statistical plots. Two plots were generated:
+These plots were saved as .png image files using plt.savefig().
 
-A bar chart for the top 10 countries with the highest COVID-19 cases.
+PDF Report Generation:
+Using the reportlab library, I created a professionally formatted PDF report. It included a title, data source, inserted charts, and a brief summary. The file was saved as Covid_Report.pdf.
 
-A scatter plot showing the relationship between deaths and recoveries in those countries.
+HTML Dashboard Creation:
+I designed a basic HTML dashboard to display both charts within a simple, clean web layout. This provides a browser-friendly view of the visualizations.
 
-ReportLab
-Used to generate a PDF report programmatically. The report included titles, data source reference, chart images, and a summary paragraph.
+Packaging for Submission:
+All essential files (.py, .png, .pdf, and .html) were bundled into a ZIP file using Python's zipfile module, making it ready for submission.
 
-HTML/CSS
-A basic HTML dashboard was created to display charts in a clean, browser-friendly layout. This can be hosted or shared as a static web visualization tool.
+Tools and Libraries Used:
+Python 3.x
 
-ZIP Archive Packaging
-The final deliverables were bundled into a .zip file using Python’s zipfile module for easy submission and portability.
+requests – API communication
 
-Applications and Real-World Relevance
-This project demonstrates key skills that are highly applicable in the fields of data science, business analytics, and software development. By integrating live data from a public API, the project simulates real-world use cases such as:
+pandas – Data manipulation
 
-Health Analytics Dashboards: Governments, health institutions, and news outlets often use such dashboards to display live pandemic statistics.
+matplotlib, seaborn – Data visualization
 
-Market & Financial Analysis: Similar techniques are used for stock market dashboards, cryptocurrency trackers, and sales reports.
+reportlab – PDF report generation
 
-Environmental Monitoring: APIs from weather or pollution data providers can be used in place of COVID-19 data for climate analytics dashboards.
+HTML/CSS – Web dashboard
 
-Automation of Reports: The PDF generation workflow is similar to what’s used in monthly performance reports, automated emails, or business intelligence tools.
+zipfile – Packaging
 
-This project also introduces concepts of data pipeline automation, visual storytelling, and report publishing, all of which are vital in the corporate world, particularly in roles involving data visualization, analytics, and automation.
+Applications and Relevance:
+This workflow is highly applicable in domains like:
 
-Conclusion
-The project successfully integrates API data extraction, data manipulation, visualization, and presentation — all using Python and open-source tools. It showcases my ability to build end-to-end data applications and demonstrates a strong foundation in both programming and analytical thinking. It also improves readiness for real-world tasks in domains like data analytics, reporting, automation, and dashboard development.
+Public health monitoring
+
+Financial dashboards
+
+Weather/climate tracking
+
+Business intelligence and reporting
+
+Organizations can use similar tools to automatically pull, analyze, and present live data for decision-making.
+
+Conclusion:
+The project effectively integrates API access, data manipulation, visualization, and reporting using Python. It reflects a real-world data pipeline and builds practical skills in scripting, automation, and data presentation. It also meets all requirements of the CodTech internship module and is ready for submission.
 
 #OUTPUT
 
