@@ -66,3 +66,4 @@ The project successfully integrates API data extraction, data manipulation, visu
 
 #OUTPUT
 https://github.com/user-attachments/assets/d6c02229-ffd7-4bce-978d-d90fb325c781
+https://github.com/user-attachments/assets/c3320939-b877-4a73-80ab-b11ef7dc8122
